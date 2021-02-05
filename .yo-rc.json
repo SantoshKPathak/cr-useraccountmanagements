@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.hzn.cr.uam"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "microservice",
+    "baseName": "UserAccountManagement",
+    "packageName": "com.hzn.cr.uam",
+    "packageFolder": "com/hzn/cr/uam",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "oracle",
+    "prodDatabaseType": "oracle",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MTYyZDMyNDRmYTRhZTU5NTEyZjEyNzFlYTFhMjQ1Y2IxNWM3OTdkNjVkNzEwODljZDRhYWY4N2MzMjFkNmM4M2M3MGJmZjRmMzYxNGQyYmUwMDU3ZjE2NDQ0OTlmN2U0OTA2NGJiNjgwYTZjZjY0NTE2ZjQwOTM2NjBkYTE1OWM=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1612314521722,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

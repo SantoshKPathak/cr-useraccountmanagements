@@ -1,0 +1,688 @@
+{
+  "name": "UsrUser",
+  "fields": [
+    {
+      "fieldName": "usrUid",
+      "fieldType": "Integer",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "usrStfUid",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usrId",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "32"
+    },
+    {
+      "fieldName": "usrAccountStatus",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrDateAccountExpiration",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "usrAccountLockedYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrRecordStatus",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrDatePasswordExpiration",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "usrUserType",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrRecordStatusDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "usrCreateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "usrUsrUidCreatedBy",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usrUsrUidUpdatedBy",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usrLastUpdateDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "usrDbLoginName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "32"
+    },
+    {
+      "fieldName": "usrDbLoginPassword",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "32"
+    },
+    {
+      "fieldName": "usrAppLoginName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "250"
+    },
+    {
+      "fieldName": "usrAppLoginPassword",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "250"
+    },
+    {
+      "fieldName": "usrDateAppLoginPassword",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "usrForceNewPasswordDays",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usrGraceLoginsRemaining",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usrDateTimeRestrictions",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "168"
+    },
+    {
+      "fieldName": "usrPrevAppLoginPasswd1",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "250"
+    },
+    {
+      "fieldName": "usrPrevAppLoginPasswd2",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "250"
+    },
+    {
+      "fieldName": "usrPrevAppLoginPasswd3",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "250"
+    },
+    {
+      "fieldName": "usrPrevAppLoginPasswd4",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "250"
+    },
+    {
+      "fieldName": "usrPrevAppLoginPasswd5",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "250"
+    },
+    {
+      "fieldName": "usrStaffAccessPrivilege",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrViewRestrictedEventYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrUseDefaultsYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrSoundexNameSearchYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrShowInactiveRecordsYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrControlCenterYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrToolbarShowYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrToolbarTextYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrToolbarPosition",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrSaveSettingsYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrWildcardMatchYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrViewVipPmiYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrViewEmployeePmiYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrViewRestrictedPmiYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrVerificationRightsYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrShowVerificationYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrWgrCodeDefault",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "6"
+    },
+    {
+      "fieldName": "usrClassificationAccess",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrDepartmentalAccess",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrAssocReviewDptAccess",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrAssocReviewHsvAccess",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrAssocReviewCmmAccess",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrIncludeDptStaffYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrIncludeHsvStaffYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrIncludeCmmMembersYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrClaimCategoryAccess",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrReviewTrackAccess",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrIssueOwnerDptAccess",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrIssueOwnerCmmAccess",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrIssueOwnerHsvAccess",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrTaskListRefresh",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usrPpfCode",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "6"
+    },
+    {
+      "fieldName": "usrLinkSmcToRlcYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrRemoteId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usrExternalFaxId",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "21"
+    },
+    {
+      "fieldName": "usrSessionsMax",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usrFloatToolbarYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrBookmarkX",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usrBookmarkY",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usrBookmarkHeight",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usrBookmarkWidth",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usrNumRecentList",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usrDisplayBookmarksYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrRecordVersion",
+      "fieldType": "Integer",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "usrNameKey",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "64"
+    },
+    {
+      "fieldName": "usrLastName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "35"
+    },
+    {
+      "fieldName": "usrFirstName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "25"
+    },
+    {
+      "fieldName": "usrMiddleName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "25"
+    },
+    {
+      "fieldName": "usrFormattedName",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "64"
+    },
+    {
+      "fieldName": "usrNameSoundex",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "10"
+    },
+    {
+      "fieldName": "usrAddressLine1",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "55"
+    },
+    {
+      "fieldName": "usrAddressLine2",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "55"
+    },
+    {
+      "fieldName": "usrCity",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "30"
+    },
+    {
+      "fieldName": "usrStaCode",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "6"
+    },
+    {
+      "fieldName": "usrPhone1",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "20"
+    },
+    {
+      "fieldName": "usrPhone2",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "20"
+    },
+    {
+      "fieldName": "usrPhone3",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "20"
+    },
+    {
+      "fieldName": "usrFax",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "20"
+    },
+    {
+      "fieldName": "usrEmail1",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "60"
+    },
+    {
+      "fieldName": "usrEmail2",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "60"
+    },
+    {
+      "fieldName": "usrPocCode",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "15"
+    },
+    {
+      "fieldName": "usrPostalExtension",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "4"
+    },
+    {
+      "fieldName": "usrCntCode",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "3"
+    },
+    {
+      "fieldName": "usrPfpUid",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usrScheduleRestrictionsYN",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "1"
+    },
+    {
+      "fieldName": "usrLoginAttemptsRemaining",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "usrLastPmeRefreshTimestamp",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "usrSisenseUsername",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "maxlength"
+      ],
+      "fieldValidateRulesMaxlength": "100"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210203021424",
+  "entityTableName": "usr_user",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "UserAccountManagement",
+  "applications": "*",
+  "microserviceName": "UserAccountManagement"
+}

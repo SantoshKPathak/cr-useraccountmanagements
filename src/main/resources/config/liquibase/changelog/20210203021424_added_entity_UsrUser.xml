@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <property name="autoIncrement" value="true"/>
+
+    <!--
+        Added the entity UsrUser.
+    -->
+    <changeSet id="20210203021424-1" author="jhipster">
+        <createTable tableName="usr_user">
+            <column name="usr_uid" type="integer">
+                <constraints  primaryKey="true" nullable="false"/>
+            </column>
+            <column name="usr_stf_uid" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_id" type="varchar(32)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_account_status" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_date_account_expiration" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_account_locked_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_record_status" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_date_password_expiration" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_user_type" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_record_status_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_create_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_usr_uid_created_by" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_usr_uid_updated_by" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_last_update_date" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_db_login_name" type="varchar(32)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_db_login_password" type="varchar(32)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_app_login_name" type="varchar(250)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_app_login_password" type="varchar(250)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_date_app_login_password" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_force_new_password_days" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_grace_logins_remaining" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_date_time_restrictions" type="varchar(168)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_prev_app_login_passwd_1" type="varchar(250)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_prev_app_login_passwd_2" type="varchar(250)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_prev_app_login_passwd_3" type="varchar(250)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_prev_app_login_passwd_4" type="varchar(250)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_prev_app_login_passwd_5" type="varchar(250)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_staff_access_privilege" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_view_restricted_event_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_use_defaults_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_soundex_name_search_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_show_inactive_records_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_control_center_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_toolbar_show_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_toolbar_text_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_toolbar_position" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_save_settings_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_wildcard_match_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_view_vip_pmi_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_view_employee_pmi_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_view_restricted_pmi_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_verification_rights_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_show_verification_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_wgr_code_default" type="varchar(6)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_classification_access" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_departmental_access" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_assoc_review_dpt_access" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_assoc_review_hsv_access" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_assoc_review_cmm_access" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_include_dpt_staff_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_include_hsv_staff_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_include_cmm_members_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_claim_category_access" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_review_track_access" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_issue_owner_dpt_access" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_issue_owner_cmm_access" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_issue_owner_hsv_access" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_task_list_refresh" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_ppf_code" type="varchar(6)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_link_smc_to_rlc_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_remote_id" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_external_fax_id" type="varchar(21)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_sessions_max" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_float_toolbar_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_bookmark_x" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_bookmark_y" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_bookmark_height" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_bookmark_width" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_num_recent_list" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_display_bookmarks_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_record_version" type="integer">
+                <constraints nullable="false" />
+            </column>
+            <column name="usr_name_key" type="varchar(64)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_last_name" type="varchar(35)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_first_name" type="varchar(25)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_middle_name" type="varchar(25)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_formatted_name" type="varchar(64)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_name_soundex" type="varchar(10)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_address_line_1" type="varchar(55)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_address_line_2" type="varchar(55)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_city" type="varchar(30)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_sta_code" type="varchar(6)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_phone_1" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_phone_2" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_phone_3" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_fax" type="varchar(20)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_email_1" type="varchar(60)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_email_2" type="varchar(60)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_poc_code" type="varchar(15)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_postal_extension" type="varchar(4)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_cnt_code" type="varchar(3)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_pfp_uid" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_schedule_restrictions_yn" type="varchar(1)">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_login_attempts_remaining" type="integer">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_last_pme_refresh_timestamp" type="date">
+                <constraints nullable="true" />
+            </column>
+            <column name="usr_sisense_username" type="varchar(100)">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <changeSet id="20210203021424-1-relations" author="jhipster">
+
+    </changeSet>
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20210203021424-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/usr_user.csv"
+                  separator=";"
+                  tableName="usr_user">
+            <column name="usr_uid" type="numeric"/>
+            <column name="usr_stf_uid" type="numeric"/>
+            <column name="usr_id" type="string"/>
+            <column name="usr_account_status" type="string"/>
+            <column name="usr_date_account_expiration" type="date"/>
+            <column name="usr_account_locked_yn" type="string"/>
+            <column name="usr_record_status" type="string"/>
+            <column name="usr_date_password_expiration" type="date"/>
+            <column name="usr_user_type" type="string"/>
+            <column name="usr_record_status_date" type="date"/>
+            <column name="usr_create_date" type="date"/>
+            <column name="usr_usr_uid_created_by" type="numeric"/>
+            <column name="usr_usr_uid_updated_by" type="numeric"/>
+            <column name="usr_last_update_date" type="date"/>
+            <column name="usr_db_login_name" type="string"/>
+            <column name="usr_db_login_password" type="string"/>
+            <column name="usr_app_login_name" type="string"/>
+            <column name="usr_app_login_password" type="string"/>
+            <column name="usr_date_app_login_password" type="date"/>
+            <column name="usr_force_new_password_days" type="numeric"/>
+            <column name="usr_grace_logins_remaining" type="numeric"/>
+            <column name="usr_date_time_restrictions" type="string"/>
+            <column name="usr_prev_app_login_passwd_1" type="string"/>
+            <column name="usr_prev_app_login_passwd_2" type="string"/>
+            <column name="usr_prev_app_login_passwd_3" type="string"/>
+            <column name="usr_prev_app_login_passwd_4" type="string"/>
+            <column name="usr_prev_app_login_passwd_5" type="string"/>
+            <column name="usr_staff_access_privilege" type="string"/>
+            <column name="usr_view_restricted_event_yn" type="string"/>
+            <column name="usr_use_defaults_yn" type="string"/>
+            <column name="usr_soundex_name_search_yn" type="string"/>
+            <column name="usr_show_inactive_records_yn" type="string"/>
+            <column name="usr_control_center_yn" type="string"/>
+            <column name="usr_toolbar_show_yn" type="string"/>
+            <column name="usr_toolbar_text_yn" type="string"/>
+            <column name="usr_toolbar_position" type="string"/>
+            <column name="usr_save_settings_yn" type="string"/>
+            <column name="usr_wildcard_match_yn" type="string"/>
+            <column name="usr_view_vip_pmi_yn" type="string"/>
+            <column name="usr_view_employee_pmi_yn" type="string"/>
+            <column name="usr_view_restricted_pmi_yn" type="string"/>
+            <column name="usr_verification_rights_yn" type="string"/>
+            <column name="usr_show_verification_yn" type="string"/>
+            <column name="usr_wgr_code_default" type="string"/>
+            <column name="usr_classification_access" type="string"/>
+            <column name="usr_departmental_access" type="string"/>
+            <column name="usr_assoc_review_dpt_access" type="string"/>
+            <column name="usr_assoc_review_hsv_access" type="string"/>
+            <column name="usr_assoc_review_cmm_access" type="string"/>
+            <column name="usr_include_dpt_staff_yn" type="string"/>
+            <column name="usr_include_hsv_staff_yn" type="string"/>
+            <column name="usr_include_cmm_members_yn" type="string"/>
+            <column name="usr_claim_category_access" type="string"/>
+            <column name="usr_review_track_access" type="string"/>
+            <column name="usr_issue_owner_dpt_access" type="string"/>
+            <column name="usr_issue_owner_cmm_access" type="string"/>
+            <column name="usr_issue_owner_hsv_access" type="string"/>
+            <column name="usr_task_list_refresh" type="numeric"/>
+            <column name="usr_ppf_code" type="string"/>
+            <column name="usr_link_smc_to_rlc_yn" type="string"/>
+            <column name="usr_remote_id" type="numeric"/>
+            <column name="usr_external_fax_id" type="string"/>
+            <column name="usr_sessions_max" type="numeric"/>
+            <column name="usr_float_toolbar_yn" type="string"/>
+            <column name="usr_bookmark_x" type="numeric"/>
+            <column name="usr_bookmark_y" type="numeric"/>
+            <column name="usr_bookmark_height" type="numeric"/>
+            <column name="usr_bookmark_width" type="numeric"/>
+            <column name="usr_num_recent_list" type="numeric"/>
+            <column name="usr_display_bookmarks_yn" type="string"/>
+            <column name="usr_record_version" type="numeric"/>
+            <column name="usr_name_key" type="string"/>
+            <column name="usr_last_name" type="string"/>
+            <column name="usr_first_name" type="string"/>
+            <column name="usr_middle_name" type="string"/>
+            <column name="usr_formatted_name" type="string"/>
+            <column name="usr_name_soundex" type="string"/>
+            <column name="usr_address_line_1" type="string"/>
+            <column name="usr_address_line_2" type="string"/>
+            <column name="usr_city" type="string"/>
+            <column name="usr_sta_code" type="string"/>
+            <column name="usr_phone_1" type="string"/>
+            <column name="usr_phone_2" type="string"/>
+            <column name="usr_phone_3" type="string"/>
+            <column name="usr_fax" type="string"/>
+            <column name="usr_email_1" type="string"/>
+            <column name="usr_email_2" type="string"/>
+            <column name="usr_poc_code" type="string"/>
+            <column name="usr_postal_extension" type="string"/>
+            <column name="usr_cnt_code" type="string"/>
+            <column name="usr_pfp_uid" type="numeric"/>
+            <column name="usr_schedule_restrictions_yn" type="string"/>
+            <column name="usr_login_attempts_remaining" type="numeric"/>
+            <column name="usr_last_pme_refresh_timestamp" type="date"/>
+            <column name="usr_sisense_username" type="string"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>
